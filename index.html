@@ -2,168 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ShityDOGE</title>
+    <title>ShityDOGE — Meme Coin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ShityDOGE is a meme experiment. No promises. No roadmap. Just chaos.">
+    <meta name="description" content="ShityDOGE is a premium meme experiment. No roadmap. No promises. Just memes.">
 
-    <style>
-        :root {
-            --gold: #ffcc00;
-            --orange: #ff9f1c;
-            --dark: #0b0b0b;
-            --glass: rgba(255, 255, 255, 0.06);
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background:
-                radial-gradient(circle at top, rgba(255, 200, 0, 0.15), transparent 60%),
-                radial-gradient(circle at bottom, rgba(255, 150, 0, 0.12), transparent 60%),
-                var(--dark);
-            color: #f5f5f5;
-            text-align: center;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 20px;
-            animation: fadeIn 1.2s ease forwards;
-        }
-
-        /* LOGO */
-        img.logo {
-            max-width: 320px;
-            width: 90%;
-            border-radius: 18px;
-            box-shadow:
-                0 0 30px rgba(255, 200, 0, 0.35),
-                0 0 80px rgba(255, 160, 0, 0.25);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        h1 {
-            font-size: 3.2rem;
-            margin: 30px 0 10px;
-            letter-spacing: 3px;
-            background: linear-gradient(135deg, var(--gold), var(--orange));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        p.tagline {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            margin-bottom: 40px;
-        }
-
-        .box {
-            background: var(--glass);
-            backdrop-filter: blur(10px);
-            border-radius: 18px;
-            padding: 30px;
-            margin: 0 auto 40px;
-            max-width: 620px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-            animation: slideUp 1s ease forwards;
-        }
-
-        .box p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-
-        .links a {
-            display: inline-block;
-            margin: 12px;
-            padding: 14px 30px;
-            border-radius: 40px;
-            background: linear-gradient(135deg, var(--gold), var(--orange));
-            color: #000;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0 10px 25px rgba(255, 180, 0, 0.4);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .links a:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(255, 180, 0, 0.6);
-        }
-
-        .disclaimer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            opacity: 0.6;
-            animation: fadeIn 2s ease forwards;
-        }
-
-        footer {
-            margin-top: 70px;
-            font-size: 0.8rem;
-            opacity: 0.4;
-        }
-
-        /* ANIMATIONS */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<!-- BACKGROUND FX -->
+<div class="bg-glow"></div>
 
+<header class="hero">
     <img src="logo.jpg" alt="ShityDOGE logo" class="logo">
 
     <h1>SHITYDOGE</h1>
-    <p class="tagline">The most honest meme coin.</p>
+    <p class="subtitle">The most honest meme coin on the internet.</p>
 
-    <div class="box">
-        <p>ShityDOGE is a meme experiment.</p>
-        <p>No roadmap. No utility. No promises.</p>
-        <p>Just a dog, memes and chaos.</p>
-        <p>If it lives — it lives.<br>If it dies — it dies.</p>
+    <div class="cta">
+        <a href="https://t.me/TWOJ_TELEGRAM" target="_blank">Join Telegram</a>
+        <a href="#about" class="secondary">What is this?</a>
     </div>
+</header>
 
-    <div class="links">
-        <a href="https://t.me/ShityDoge" target="_blank">Telegram</a>
-        <a href="#" onclick="alert('No buying links. This is just a meme.'); return false;">Chart</a>
+<section id="about" class="section">
+    <h2>What is ShityDOGE?</h2>
+    <p>
+        ShityDOGE is not a revolution.<br>
+        It’s not a protocol. It’s not a promise.
+    </p>
+    <p>
+        It’s a meme experiment born from crypto chaos.<br>
+        No roadmap. No utility. No lies.
+    </p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>🧠 No Illusions</h3>
+        <p>No fake roadmap, no fake use case, no marketing buzzwords.</p>
     </div>
+    <div class="card">
+        <h3>🔥 Pure Meme</h3>
+        <p>Driven by culture, humor and internet chaos.</p>
+    </div>
+    <div class="card">
+        <h3>🪦 If it dies</h3>
+        <p>It dies honestly. No relaunches. No V2. No excuses.</p>
+    </div>
+</section>
 
-    <div class="disclaimer">
-        This is not an investment. This is a meme.<br>
+<section class="section dark">
+    <h2>Community</h2>
+    <p>
+        There is only one official place.<br>
+        Everything else is noise.
+    </p>
+
+    <a href="https://t.me/TWOJ_TELEGRAM" class="big-button" target="_blank">
+        Enter Telegram
+    </a>
+</section>
+
+<footer>
+    <p>
+        This is a meme. Not an investment.<br>
         Seriously. Do not expect anything.
-    </div>
-
-    <footer>
-        © 2026 ShityDOGE — powered by memes
-    </footer>
-
-</div>
+    </p>
+    <span>© 2026 ShityDOGE</span>
+</footer>
 
 </body>
 </html>
